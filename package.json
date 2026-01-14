@@ -1,0 +1,20 @@
+{
+  "name": "react-input-debounce",
+  "version": "1.0.0",
+  "description": "A React hook to debounce input onChange event",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bexet/react-input-debounce.git"
+  },
+  "keywords": [],
+  "author": "Bexet <bexet.ms@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bexet/react-input-debounce/issues"
+  },
+  "homepage": "https://github.com/Bexet/react-input-debounce#readme"
+}
