@@ -10,11 +10,25 @@
     "type": "git",
     "url": "git+https://github.com/Bexet/react-input-debounce.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "coùrrent",
+    "input",
+    "onChange",
+    "debounce",
+    "throttle"
+  ],
   "author": "Bexet <bexet.ms@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Bexet/react-input-debounce/issues"
   },
-  "homepage": "https://github.com/Bexet/react-input-debounce#readme"
+  "homepage": "https://github.com/Bexet/react-input-debounce#readme",
+  "dependencies": {
+    "react": "^19.2.3",
+    "use-debounce": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.8"
+  }
 }
