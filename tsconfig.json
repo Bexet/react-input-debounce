@@ -1,34 +1,38 @@
 {
     "compilerOptions": {
-        "strict": true,
-        "esModuleInterop": true,
-        "noUnusedParameters": true,
-        "noUnusedLocals": true,
-        "forceConsistentCasingInFileNames": true,
-        "resolveJsonModule": true,
-        "skipLibCheck": true,
-        "sourceMap": true,
-        "module": "ESNext",
-        "noEmit": true,
-        "moduleResolution": "Bundler",
-        "target": "ES2022",
-        "lib": [
-            "DOM",
-            "DOM.Iterable",
-            "ESNext"
-        ],
-        "types": [
-            "vite/client",
-        ],
+        "target": "ES2019",
+        "lib": ["DOM", "ES2019"],
         "jsx": "react-jsx",
-        "jsxImportSource": "react",
+
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "resolveJsonModule": true,
+
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noUncheckedIndexedAccess": true,
+        "useUnknownInCatchVariables": true,
+
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+
+        "declaration": true,
+        "declarationMap": true,
+        "emitDeclarationOnly": false,
+        "sourceMap": true,
 
         "baseUrl": ".",
         "paths": {
             "@/*": ["src/*"]
-        }
+        },
+
+        "outDir": "dist",
+
+        "types": ["vite/client"]
     },
-        "exclude": [
-        "dist"
-    ]
+
+    "include": ["src", "example"],
+    "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx"]
 }
