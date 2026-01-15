@@ -17,7 +17,7 @@ export default defineConfig({
         lib: {
             entry: fileURLToPath(new URL('./src/index.ts', import.meta.url)),
             name: 'DebounceInput',
-            fileName: (format) => `react-input-debounce.${format}.js`,
+            fileName: (format) => `index.${format}.js`,
             formats: ['es', 'cjs']
         },
         rollupOptions: {

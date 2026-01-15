@@ -2,9 +2,12 @@
   "name": "react-input-debounce",
   "version": "1.0.2",
   "description": "A React component to debounce input onChange event",
-  "main": "dist/react-input-debounce.cjs.js",
-  "module": "dist/react-input-debounce.es.js",
-  "types": "dist/react-input-debounce.d.ts",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -17,7 +20,7 @@
   },
   "keywords": [
     "react",
-    "coùrrent",
+    "component",
     "input",
     "onChange",
     "debounce",
@@ -43,5 +46,11 @@
     "react-dom": "^19.2.3",
     "react": "^19.2.3",
     "vite": "^7.3.1"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
   }
 }
