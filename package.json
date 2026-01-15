@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/Bexet/react-input-debounce#readme",
   "peerDependencies": {
-    "react": "^19.2.3"
+    "react": "^19.0.0"
   },
   "dependencies": {},
   "devDependencies": {
