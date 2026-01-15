@@ -29,8 +29,10 @@
     "url": "https://github.com/Bexet/react-input-debounce/issues"
   },
   "homepage": "https://github.com/Bexet/react-input-debounce#readme",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^19.2.3"
+  },
+  "dependencies": {
   },
   "devDependencies": {
     "use-debounce": "^10.1.0",
@@ -40,6 +42,7 @@
     "@types/react": "^19.2.8",
     "@types/react-dom": "^19.2.3",
     "react-dom": "^19.2.3",
+    "react": "^19.2.3",
     "vite": "^7.3.1"
   }
 }
