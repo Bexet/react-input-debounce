@@ -55,7 +55,7 @@
       },
       "require": {
         "types": "./dist/index.d.ts",
-        "default": "./dist/index.cjs.js",
+        "default": "./dist/index.cjs.js"
       }
     }
   }
