@@ -1,10 +1,15 @@
 {
   "name": "react-input-debounce",
   "version": "1.0.0",
-  "description": "A React hook to debounce input onChange event",
-  "main": "src/index.js",
+  "description": "A React component to debounce input onChange event",
+  "main": "dist/react-input-debounce.cjs.js",
+  "module": "dist/react-input-debounce.es.js",
+  "types": "dist/react-input-debounce.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -25,10 +30,16 @@
   },
   "homepage": "https://github.com/Bexet/react-input-debounce#readme",
   "dependencies": {
-    "react": "^19.2.3",
-    "use-debounce": "^10.1.0"
+    "react": "^19.2.3"
   },
   "devDependencies": {
-    "@types/react": "^19.2.8"
+    "use-debounce": "^10.1.0",
+    "vite-plugin-dts": "^4.5.4",
+    "@vitejs/plugin-react": "^5.1.2",
+    "@types/node": "^25.0.8",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "vite": "^7.3.1"
   }
 }
