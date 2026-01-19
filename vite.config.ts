@@ -1,7 +1,18 @@
-import { defineConfig } from 'vite'
+import { defineConfig, LibraryFormats } from 'vite'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
 import { fileURLToPath, URL } from 'node:url'
+
+const formats: { format: LibraryFormats, extension: string }[] = [
+    {
+        format: 'cjs',
+        extension: 'js',
+    },
+    {
+        format: 'es',
+        extension: 'mjs',
+    },
+];
 
 export default defineConfig({
     plugins: [
@@ -17,8 +28,11 @@ export default defineConfig({
         lib: {
             entry: fileURLToPath(new URL('./src/index.ts', import.meta.url)),
             name: 'DebounceInput',
-            fileName: (format) => `index.${format}.js`,
-            formats: ['es', 'cjs']
+            fileName: (format) => {
+                const { extension } = formats.find(({format: f}) => f === format)!;
+                return `index.${extension}`;
+            },
+            formats: formats.map(({format}) => format)
         },
         rollupOptions: {
             external: ['react'],
