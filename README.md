@@ -1,8 +1,12 @@
 # react input debounce [![npm version](https://img.shields.io/npm/v/react-input-debounce)](https://www.npmjs.com/package/react-input-debounce) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/Bexet/react-input-debounce)](https://github.com/Bexet/react-input-debounce)
 
-Version 1.0.6
-
 `react input debounce` provides a simple and efficient React component to debounce the `onChange` event of a standard HTML input element. This prevents excessive re-renders or API calls while a user is actively typing, improving performance and user experience.
+
+```typescript
+import { DebounceInput } from 'react-input-debounce';
+...
+<DebounceInput debounceTimeout={500} onChange={...} />
+```
 
 ## ✨ Features
 
